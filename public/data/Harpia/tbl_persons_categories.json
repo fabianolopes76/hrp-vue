@@ -1,0 +1,82 @@
+[
+	{
+		"id" : 1,
+		"name" : "Usuário",
+		"label" : "usuario",
+		"icon" : "",
+		"background_color" : "#519e8a",
+		"font_color" : "#FFFFFF",
+		"created_at" : "2022-07-27 14:25:17",
+		"updated_at" : "2022-07-27 14:25:17"
+	},
+	{
+		"id" : 2,
+		"name" : "Cliente",
+		"label" : "cliente",
+		"icon" : "",
+		"background_color" : "#c5c9a4",
+		"font_color" : "#000000",
+		"created_at" : "2022-07-27 14:25:17",
+		"updated_at" : "2022-07-27 14:25:17"
+	},
+	{
+		"id" : 3,
+		"name" : "Fornecedor",
+		"label" : "fornecedor",
+		"icon" : "",
+		"background_color" : "#ecbeb4",
+		"font_color" : "#000000",
+		"created_at" : "2022-07-27 14:25:17",
+		"updated_at" : "2022-07-27 14:25:17"
+	},
+	{
+		"id" : 4,
+		"name" : "Colaborador",
+		"label" : "colaborador",
+		"icon" : "",
+		"background_color" : "#a24936",
+		"font_color" : "#FFFFFF",
+		"created_at" : "2022-07-27 14:25:17",
+		"updated_at" : "2022-07-27 14:25:17"
+	},
+	{
+		"id" : 5,
+		"name" : "Advogado",
+		"label" : "advogado",
+		"icon" : "",
+		"background_color" : "#801A03",
+		"font_color" : "#FFFFFF",
+		"created_at" : "2022-07-27 14:25:17",
+		"updated_at" : "2022-07-27 14:25:17"
+	},
+	{
+		"id" : 6,
+		"name" : "Contador",
+		"label" : "contador",
+		"icon" : "",
+		"background_color" : "#017850",
+		"font_color" : "#FFFFFF",
+		"created_at" : "2022-07-27 14:25:17",
+		"updated_at" : "2022-07-27 14:25:17"
+	},
+	{
+		"id" : 7,
+		"name" : "Parte Cliente",
+		"label" : "parte_cliente",
+		"icon" : null,
+		"background_color" : "#FFFFFF",
+		"font_color" : "#017850",
+		"created_at" : "2022-07-27 14:25:17",
+		"updated_at" : "2022-07-27 14:25:17"
+	},
+	{
+		"id" : 8,
+		"name" : "Parte Adversa",
+		"label" : "parte_adversa",
+		"icon" : null,
+		"background_color" : "#FFFFFF",
+		"font_color" : "#801A03",
+		"created_at" : "2022-07-27 14:25:17",
+		"updated_at" : "2022-07-27 14:25:17"
+	}
+]
