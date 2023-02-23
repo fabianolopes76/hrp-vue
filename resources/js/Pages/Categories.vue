@@ -38,13 +38,13 @@
         <div class="py-5">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-4 py-4">
-                    <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md my-3" role="alert" v-if="$page.props.flash.message">
+                    <!-- <div class="bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md my-3" role="alert" v-if="$page.props.flash.message">
                         <div class="flex">
                             <div>
                                 <p class="text-sm">{{ $page.props.flash.message }}</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <button
                         @click="openForm()"
@@ -68,7 +68,7 @@
                                 <td class="px-4 py-2 border">{{ item.id }}</td>
                                 <td class="px-4 py-2 border">{{ item.name }}</td>
                                 <td class="px-4 py-2 border">
-                                    <span class="text-sm w-1/3 pb-1 font-semibold px-2 rounded-full">
+                                    <span class="text-sm w-1/3 pb-1 font-semibold px-2 rounded-full" style="background-color: {{item.background_color}}!important; color: {{item.font_color}}!important;">
                                         {{ item.label }}
                                     </span>
                                 </td>
@@ -86,7 +86,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <pagination :links="data.links"></pagination>    
+                    <pagination :links="data.links"></pagination>
                     <category-form :isOpen="isFormOpen" :isEdit="isFormEdit" :form="formObject" @formsave="saveItem" @formclose="closeModal"></category-form>
                 </div>
             </div>
@@ -95,7 +95,7 @@
 </template>
 
 <script>
-    
+
     const defaultFormObject = {
         name: null, label: null, background_color: null, font_color: null
     };
@@ -103,7 +103,7 @@
     import AppLayout from '@/Layouts/AppLayout.vue';
     import Pagination from '@/Components/Pagination.vue';
     import CategoryForm from '@/Components/Category/CategoryForm.vue';
-    
+
     export default{
         props: ['data'],
         components: {
@@ -124,7 +124,7 @@
                 let url = '/categories';
                 if (item.id){
                     url = '/categories/' + item.id;
-                    item._method = 'PUT';                    
+                    item._method = 'PUT';
                 }
                 this.$inertia.post(url, item, {
                     onError: () => {
@@ -140,7 +140,7 @@
             },
             openForm(item){
                 this.isFormOpen = true;
-                this.isFormEdit = !!item;    
+                this.isFormEdit = !!item;
                 this.formObject = item ? item:defaultFormObject;
                 this.$page.props.errors = {};
             },
