@@ -17,10 +17,16 @@ class CategoryController extends Controller
      */
     public function index()
     {
+        $breadcrumbs = [
+            ['link' => "dashboard", 'name' => "Home"],
+            ['link' => "#", 'name' => "Categorias"]
+        ];
+
         $data = Category::query()->paginate(5);
 
         return Inertia::render('Categories', [
-            'data' => $data
+            'data' => $data,
+            'breadcrumbs' => $breadcrumbs,
         ]);
 
     }

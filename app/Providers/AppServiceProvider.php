@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+
         Inertia::share([
             'errors' => function () {
                 return Session::get('errors')
@@ -34,11 +34,6 @@ class AppServiceProvider extends ServiceProvider
             },
             'csrf_token' => function(){
                 return csrf_token();
-            },
-            'flash' => function() {
-                return [
-                    'message' => Session::get('message'),
-                ];
             }
         ]);
 
